@@ -8,5 +8,5 @@ exports.settings = {
 };
 
 exports.modules = {
-  enabled: ['ping', 'uptime', 'diskInfo', 'memInfo', 'reboot', 'sysInfo', 'cpuType', 'ipInfo', 'nettest'],
+  enabled: ['ping', 'uptime', 'diskInfo', 'memInfo', 'reboot', 'sysInfo', 'cpuType', 'ipInfo', 'nettest', 'topProc'],
 };
