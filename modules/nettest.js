@@ -9,7 +9,7 @@ module.exports = function(client, settings){
             msg.reply(`stderr: ${stderr}`);
             return;
           }
-          msg.reply(`Europe: ${stdout}`)
+          msg.reply(`Europe: ${stdout}`);
           });
           exec('ping -c 2 -w 2 ping-us.nodequery.com | grep rtt | cut -d\'/\' -f4 | awk \'{ print $3 }\'', (err, stdout, stderr) => {
           if (err) {
@@ -17,7 +17,7 @@ module.exports = function(client, settings){
             msg.reply(`stderr: ${stderr}`);
             return;
           }
-          msg.reply(`United States: ${stdout}`)
+          msg.reply(`United States: ${stdout}`);
           });
           exec('ping -c 2 -w 2 ping-as.nodequery.com | grep rtt | cut -d\'/\' -f4 | awk \'{ print $3 }\'', (err, stdout, stderr) => {
           if (err) {
@@ -25,7 +25,7 @@ module.exports = function(client, settings){
             msg.reply(`stderr: ${stderr}`);
             return;
           }
-          msg.reply(`Australia: ${stdout}`)
+          msg.reply(`Australia: ${stdout}`);
           });
         } else {
           if (settings.showUserUnauthorizedMessage == true) {
@@ -34,4 +34,4 @@ module.exports = function(client, settings){
         }
       }
   });
-}
+};
