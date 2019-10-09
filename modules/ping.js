@@ -4,4 +4,4 @@ module.exports = function(client, settings){
           msg.reply('Pong!');
         }
       });
-}
+};

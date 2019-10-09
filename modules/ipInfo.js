@@ -9,7 +9,7 @@ module.exports = function(client, settings){
             msg.reply(`stderr: ${stderr}`);
             return;
           }
-          msg.reply(`IPv4: ${stdout}`)
+          msg.reply(`IPv4: ${stdout}`);
           });
           exec('ip addr show | grep \'inet6 \' | awk \'{ print $2 }\' | awk -F\/ \'{ print $1 }\' | grep -v \'^::\' | grep -v \'^0000:\' | grep -v \'^fe80:\' | awk \'{ print $0 } END { if (!NR) print "N/A" }\'', (err, stdout, stderr) => {
           if (err) {
@@ -17,7 +17,7 @@ module.exports = function(client, settings){
             msg.reply(`stderr: ${stderr}`);
             return;
           }
-          msg.reply(`IPv6: ${stdout}`)
+          msg.reply(`IPv6: ${stdout}`);
           });
         } else {
           if (settings.showUserUnauthorizedMessage == true) {
@@ -26,4 +26,4 @@ module.exports = function(client, settings){
         }
       }
   });
-}
+};
