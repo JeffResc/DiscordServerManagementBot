@@ -1,0 +1,32 @@
+{
+  "name": "DiscordServerManagementBot",
+  "version": "1.0.0",
+  "description": "A Linux Server Management Bot for Discord",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "3.8.11",
+    "gulp-jshint": "1.10.0",
+    "gulp-markdown": "1.0.0"
+  },
+  "scripts": {
+    "main": "node index.js",
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffResc/DiscordServerManagementBot.git"
+  },
+  "keywords": [
+    "Discord",
+    "Linux",
+    "management",
+    "bot"
+  ],
+  "author": "AlphaT3ch",
+  "bugs": {
+    "url": "https://github.com/JeffResc/DiscordServerManagementBot/issues"
+  },
+  "homepage": "https://github.com/JeffResc/DiscordServerManagementBot",
+  "readmeFile": "README.md",
+  "license": "MIT"
+}
